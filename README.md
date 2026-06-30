@@ -6,6 +6,7 @@ Environment notes
 ---
 - JUnit Release (maven tag - org.junit.jupiter:junit-jupiter:Release)
 - I wrote this in Intellij on a Windows system.
+- using the data directory to store working data. nested in it is the data I used for some of the testing
 
 What you can do!
 ---
