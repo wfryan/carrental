@@ -142,8 +142,8 @@ public class Inventory {
 
 
     /**
-     * TODO: Save inventory to update car inventory updates
-     * @return
+     * Saves the car inventory to disk
+     * @return true if works, false if fails
      */
     public boolean saveInventory(){
         try(BufferedWriter inventoryWriter = new BufferedWriter(new FileWriter(this.saveLocation, false))){
