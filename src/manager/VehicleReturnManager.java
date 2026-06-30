@@ -21,10 +21,9 @@ public class VehicleReturnManager {
     }
 
     /**
-     * TODO: Refactor for the new Active contracts structure
-     * @param all
-     * @param active
-     * @param late
+     * @param all - the contract ledger
+     * @param active - all active and upcoming ledgers
+     * @param late - late return rentals
      */
     public void parseAll(ArrayList<RentalContract> all, Map<Integer, List<RentalContract>> active, ArrayList<RentalContract> late)
     {
@@ -71,6 +70,10 @@ public class VehicleReturnManager {
 
     }
 
+    /**
+    *@params all - the contract ledger
+    *@params active - all active and upcoming rentals
+    */
     public boolean parseCancel(ArrayList<RentalContract> all, Map<Integer, List<RentalContract>> active)
     {
         boolean found = false;
